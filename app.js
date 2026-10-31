@@ -44,6 +44,21 @@ async function initializeDBAndServer() {
   }
 }
 
+// GET / - API welcome/health check
+app.get('/', (request, response) => {
+  response.status(200).send({
+    message: 'Welcome to the Books CRUD API!',
+    status: 'running',
+    endpoints: {
+      'GET /books/': 'Retrieve all books',
+      'GET /books/:bookId/': 'Retrieve a single book by ID',
+      'POST /books/': 'Add a new book',
+      'PUT /books/:bookId/': 'Update a book by ID',
+      'DELETE /books/:bookId/': 'Delete a book by ID'
+    }
+  });
+});
+
 // GET /books/ - retrieve all books
 app.get('/books/', async (request, response) => {
   try {
