@@ -5,7 +5,13 @@
 
 ## Live link
 
-Not deployed. Run the project locally using the instructions below. The API test script and Postman collection are included so that all five endpoints can be verified. Add the deployed public URL here after deployment, if required by the faculty.
+🚀 **Deployed on Render:** https://lab-02-sqlite-crud-6scg.onrender.com/
+
+| Endpoint | URL |
+|---|---|
+| Welcome / Health Check | https://lab-02-sqlite-crud-6scg.onrender.com/ |
+| All Books | https://lab-02-sqlite-crud-6scg.onrender.com/books/ |
+| Single Book | https://lab-02-sqlite-crud-6scg.onrender.com/books/1/ |
 
 ## Objective
 
